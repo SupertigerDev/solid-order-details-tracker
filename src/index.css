@@ -9,6 +9,7 @@ body {
   height: 100vh;
   background-color: #e4e4e4;
   font-family: "inter", sans-serif;
+  font-size: 15px;
 }
 
 #root {

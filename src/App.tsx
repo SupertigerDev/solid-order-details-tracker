@@ -102,8 +102,8 @@ const Tab = (props: {title: string, selected: boolean, onClick?: () => void}) =>
 const Footer = () => {
   return (
     <div class="flex h-10 px-4 items-center shrink-0 border-t border-t-solid border-t-gray-400">
-      <div class="text-gray-500 text-sm flex-1">Order 1 of 13</div>
-      <div class="text-gray-500 text-sm">Next order</div>
+      <div class="text-gray-500 text-[13px] flex-1">Order 1 of 13</div>
+      <div class="text-gray-500 text-[13px]">Next order</div>
     </div>
   )
 }
@@ -182,18 +182,18 @@ const OrderHistoryItem = (props: {first?: boolean, last?: boolean, update: Histo
             <div class="flex-1">{props.update.title}</div>
             <Show when={props.update.showDetailsButton}><div class="text-[#00753b]">See Details</div></Show>
           </div>
-          <div class="text-gray-400 text-sm">{props.update.date}</div>
+          <div class="text-gray-400 text-[13px]">{props.update.date}</div>
         </div>
 
         <Show when={props.update.title === "Product Shipped"}>
-          <div class="mt-2 text-sm">
+          <div class="mt-2 text-[13px]">
             <div>Courier Service: {props.update.service}</div>
             <div>Estimated Delivery Date: {props.update.estimate}</div>
           </div>
         </Show>
 
         <Show when={props.update.title === "Product Packaging"}>
-          <div class="mt-2 text-sm">
+          <div class="mt-2 text-[13px]">
             <div>Tracking number: {props.update.trackingNumber}</div>
             <div>Warehouse: {props.update.warehouse}</div>
           </div>
