@@ -6,7 +6,7 @@ function App() {
 
 
   return (
-    <div class="bg-white border-gray-400 border-solid border rounded-lg overflow-hidden w-[700px]">
+    <div class="bg-white border-gray-400 border-solid border rounded-lg overflow-hidden w-[600px]">
       <div class="p-6 pb-2">
       <MainDetails/>
       <OrderDetails/>
