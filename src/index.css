@@ -5,8 +5,12 @@
 body {
   display: flex;
   justify-content: center;
-  align-items: center;
+
   height: 100vh;
   background-color: #e4e4e4;
   font-family: "inter", sans-serif;
+}
+
+#root {
+  margin: auto;
 }
